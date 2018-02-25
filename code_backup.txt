@@ -1,0 +1,76 @@
+
+  watch: {
+    startTime: function () {
+      console.log('watch-startTime:')
+      var self = this
+      var date = new Date(self.startTime)
+      self.startTimestamp = date.getTime()
+    }
+
+    timeToCost: function () {
+      var self = this
+      var dateinit = new Date(self.startTime)
+      var dateend = new Date(self.endtime)
+      return (dateend - dateinit)
+    }
+
+    costototal: function () {
+      console.log('costototal:')
+      var self = this
+      var dateinit = new Date(self.startTime)
+      var dateend = new Date(self.endtime)
+      return (dateend - dateinit) / 10000
+    }
+
+      var self = this
+      self.datetimestamp = date.getTime()
+
+
+
+   <img src="./assets/logo.png">
+    <router-view/>
+
+"transform-runtime",
+  "plugins": ["transform-runtime"],
+, "syntax-dynamic-import"
+
+
+      <parking>
+      </parking>
+
+Vue.component('parking', function (resolve) { require(['./components/parking/Parking.vue'], resolve) })
+      <mydatepicker>
+      </mydatepicker>
+
+Vue.component('mydatepicker', function (resolve) { require(['./components/datepicker/mydatepicker.vue'], resolve) })
+
+import Datepicker from './components/datepicker/mydatepicker'
+, Datepicker
+
+
+      self.datetimestamp = Date.parse(this.date).getTime() / 1000
+
+
+Deseamos probar lee 3 valores enteros, esos 3 valores son interpretados como los lados de un triangulo.
+
+El programa imprime un mensaje que nos dice si un triangulo es:
+
+-Equilatero, todos los lados iguales.
+ lado1 = lado2 AND lado2=lad3 entonces es equilatero
+
+-Isosceles, 2 de los 3 lados son iguales.
+ lado1 = lado2 Or lado1=lad3 OR lado2=lado3 entonces es Isoceles.
+
+-Escaleno: los 3 lados son diferentes.
+  lado1  != lado AND lado2! = lado3
+
+
+
+Escriba un set de pruebas que creas que son adecuados para probar el programa
+
+Verificar que sean Enteros Positivos.
+Evitar que alguno de los lados sea 0 (cero).
+ lado1 = lado2 AND lado2=lad3 entonces es equilatero
+ lado1 = lado2 Or lado1=lad3 OR lado2=lado3 entonces es Isoceles.
+La suma de dos de los lados siempre de ser mayor al tercero: (lado1 + lado2 > lado3) OR (lado2 + lado3 > lado1) OR ( lado3 + lado1 > lado2)
+  lado1  != lado AND lado2! = lado3
